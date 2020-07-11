@@ -24,6 +24,7 @@ body {
 	 text-rendering: optimizelegibility;
 	 scroll-behavior: smooth;
 }
+/* Starrt Header Section */
 .header_bg {
 	background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)) , url(../images/bg.jpg);
 	background-repeat: no-repeat;
@@ -38,7 +39,6 @@ body {
 	width: 70%;
 	margin: 0 auto;
 	overflow: hidden;
-	/*border: 1px solid red;*/
 }
 .logo_left {
 	float: left;
@@ -74,18 +74,17 @@ body {
 }
 
 .headings {
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-	  text-align: center;
-	  color: #fff;
-	  padding-top: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	padding-top: 100px;
 }
 .headings p {
 	font-family: BarandonGrotesque-Light;
 	font-size: 30px;
-
 }
 .headings h1 {
 	font-family: BarandonGrotesque-Bold;
@@ -117,17 +116,10 @@ body {
 /*End Header */
 
 /* Start Services */
-.service_bg {}
-.web_development {
-	
-}
+/* Reuseable Classes */
 .s_padding {
 	padding: 100px 0;
 	overflow: hidden;
-}
-.s_left {
-	float: left;
-	width: 65%;
 }
 .head {
 	font-size: 60px;
@@ -150,6 +142,12 @@ body {
 .bold {
 	font-family: BarandonGrotesque-Bold;
 	padding-bottom: 20px;
+}
+/* end*/
+
+.s_left {
+	float: left;
+	width: 65%;
 }
 .s_right {
 	float: right;
@@ -174,9 +172,10 @@ body {
 	width: 45%;
 	float: left;
 	padding-bottom: 25px;
+	margin-right: 10%;
 }
 .singles:nth-child(even) {
-	margin-left: 10%;
+	margin-right: 0;
 }
 .s_logo {
 	float: left;
@@ -273,7 +272,6 @@ body {
 }
 .blockquote2 {
 	float: left;
-	
 }
 .blockquote2:after {
 	border-width: 21px 0 21px 20px;
@@ -302,31 +300,18 @@ body {
 .team {
 	padding: 40px 0;
 	overflow: hidden;
-	
 }
 .t_single {
 	width: 33.33%;
 	float: left;
-	
 }
-
 .t_single img {
 	width: 250px;
 	height: 250px;
 	border-radius: 50%;
-
-}
-.t_single h3 {
-
 }
 .t_single .role  {
 	padding-bottom: 5px;
-}
-.social_media {
-
-}
-.social_media ul {
-	
 }
 .social_media ul li {
 	list-style: none;
@@ -344,6 +329,7 @@ body {
 	border-radius: 50%;
 	padding: 5px;
 	transition: .8s;
+	cursor: pointer;
 }
 .social_media ul li a:hover i::before {
 	background: #fff;
@@ -353,7 +339,6 @@ body {
 .team_info {
 	margin: 0 auto;
 	width: 70%;
-
 }
 .team_info p {
 	font-size: 20px;
@@ -362,6 +347,83 @@ body {
 }
 .contact_bg {
 	background: #7690C5;
+}
+.c_left {
+	width: 48%;
+	float: left;
+	color: #fff;
+}
+.contact_media {
+	padding-top: 20px;
+}
+.m_single {
+	width: 45%;
+	float: left;
+	list-style: none;
+	padding-bottom: 30px;
+	margin-right: 5%;
+}
+.m_single:nth-child(even) {
+	margin-right: 0;
+}
+.m_icon {
+	width: 10%;
+	float: left;
+	font-size: 25px;
+	color: #fff;
+}
+.m_single i::before {
+	display: inline-block;
+	color: #fff;
+}
+.m_address {
+	float: right;
+	width: 75%;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 
+}
+.m_single:hover .m_address {
+	color: #000;
+}
+.c_right {
+	width: 48%;
+	float: right;
+}
+.c_right input[type="text"],
+.c_right input[type="email"],
+.c_right textarea[type="text"],
+.c_right button[type="submit"],
+.c_right button[type="reset"] {
+	font-family: Brandon Grotesque-Medium;
+	font-size: 18px;
+	font-weight: 500;
+	width: 100%;
+	padding: 15px 20px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 3px;
+}
+.c_right textarea {
+	min-height: 160px;
+}
+#submit {
+	width: 49%;
+	float: left;
+}
+#reset {
+	width: 49%;
+	float: right;
+}
+.send button {
+	color: #777;
+	cursor: pointer;
+}
+.send button:hover {
+	background: #898989;
+	color: #fff;
 }
 .footer_bg {
 	background: #7690C5;
