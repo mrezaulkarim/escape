@@ -1,0 +1,376 @@
+@font-face {
+	font-family: BarandonGrotesque-Light;
+	src: url('../fonts/BrandonGrotesque/BrandonGrotesque-Light.ttf');
+}
+@font-face {
+	font-family: BarandonGrotesque-Regular;
+	src: url('../fonts/BrandonGrotesque/BrandonGrotesque-Regular.ttf');
+}
+@font-face {
+	font-family: BarandonGrotesque-Medium;
+	src: url('../fonts/BrandonGrotesque/BrandonGrotesque-Medium.ttf');
+}
+@font-face {
+	font-family: BarandonGrotesque-Bold;
+	src: url('../fonts/BrandonGrotesque/BrandonGrotesque-Bold.ttf');
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+	font-family: BarandonGrotesque-Regular;
+	background: #fff;
+	color: #;
+	-webkit-transition: all 0.3s ease;
+	 transition: all 0.3s ease;
+	 text-rendering: optimizelegibility;
+	 scroll-behavior: smooth;
+}
+.header_bg {
+	background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)) , url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	position: relative;
+	min-height: 620px;
+	padding: 50px 0 0;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+.logo_left {
+	float: left;
+	width: 11%;
+}
+.logo_left img{
+	width: 100%;
+}
+.menu {
+	float: right;
+	width:50%;
+}
+.menu ul {
+	float: right;
+}
+.menu ul li {
+	float: left;
+	list-style: none;
+}
+.menu ul li a {
+	display: inline-block;
+	font-family: BarandonGrotesque-Medium;
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px;
+	border-radius: 10px;
+	transition: .3s ;
+}
+
+.menu ul li:hover a {
+	background: #905B5E;
+}
+
+.headings {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  color: #fff;
+	  padding-top: 100px;
+}
+.headings p {
+	font-family: BarandonGrotesque-Light;
+	font-size: 30px;
+
+}
+.headings h1 {
+	font-family: BarandonGrotesque-Bold;
+	font-size: 62px;
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+.btn {
+	text-align: center;
+	padding-top: 30px;
+}
+.btn button{
+	width: 240px;
+	height: 65px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	background: transparent;
+	font-family: BarandonGrotesque-Bold;
+	font-size: 23px;
+	color: #fff;
+	transition: .3s;
+	cursor: pointer;
+} 
+.btn button:hover {
+	background: rgba(0,0,0,0.50);
+	color: #fff;
+	border: none;
+}
+/*End Header */
+
+/* Start Services */
+.service_bg {}
+.web_development {
+	
+}
+.s_padding {
+	padding: 100px 0;
+	overflow: hidden;
+}
+.s_left {
+	float: left;
+	width: 65%;
+}
+.head {
+	font-size: 60px;
+	text-align: justify;
+	padding-bottom: 20px;
+}
+.light{
+	font-family: BarandonGrotesque-Light;
+	font-weight: 300;
+	font-size: ;
+	text-align: justify;
+}
+.regular {
+	font-family: BarandonGrotesque-Regular;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: justify;
+	padding-bottom: 20px;
+}
+.bold {
+	font-family: BarandonGrotesque-Bold;
+	padding-bottom: 20px;
+}
+.s_right {
+	float: right;
+	width: 25%;
+}
+.s_right img {
+	width: 100%;
+}
+.left {
+	width: 65%;
+}
+.left img {
+	width: 100%;
+}
+.right {
+	width: 25%;
+}
+.identity_branding {
+	background: #FAFAFA;
+}
+.singles {
+	width: 45%;
+	float: left;
+	padding-bottom: 25px;
+}
+.singles:nth-child(even) {
+	margin-left: 10%;
+}
+.s_logo {
+	float: left;
+	background: #000;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: relative;
+}
+.s_logo:hover {
+	background: #E0E0E0;
+}
+.s_logo img {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+.s_info {
+	float: left;
+	width: 76%;
+	padding-left: 20px;
+}
+.tittle {
+	font-family: BarandonGrotesque-Medium;
+	font-weight: 500;
+	font-size: 22px;
+	padding-bottom: 10px;
+}
+
+/* Start Clients section */
+
+.client_bg {
+	background: #FAFAFA;
+}
+.header_h2 {
+	font-size: 60px;
+	text-align: center;
+}
+.header_p {
+	font-size: 22px;
+	text-align: center;
+}
+.review1 {
+	padding-top: 50px;
+	overflow: hidden;
+}
+.client1 {
+	float: left;
+}
+.client1 img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.blockquote1 {
+	margin-top: 20px;
+	float: right;
+	position: relative;
+    width: 70%;
+    padding: 40px 70px;
+    background: #fff;
+	border-radius: 5px;
+}
+
+.blockquote1:after {
+	content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 21px 20px 21px 0;
+    border-color: transparent #fff;
+    width: 0;
+    
+    left: -20px;
+    top: 54px;
+}
+.blockquote1 .quote {
+	font-family: BarandonGrotesque-Regular;
+	font-weight: 400;
+	font-size: 26px;
+}
+.author {
+	font-family: BarandonGrotesque-Regular;
+	font-weight: 400;
+	font-size: 20px;
+	color: #0074E8;
+}
+.review2 {
+	padding-top: 30px;
+	overflow: hidden;
+}
+.client2{
+	float: right;
+}
+.blockquote2 {
+	float: left;
+	
+}
+.blockquote2:after {
+	border-width: 21px 0 21px 20px;
+    margin-left: 103%;
+}
+.logo_bg {
+	padding: 50px 0;
+}
+.logos {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+	width: 15%;
+	float: left;
+}
+.logos img {
+	width: 100%;
+}
+
+/* Start Team Section */
+.team_bg {
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+.team {
+	padding: 40px 0;
+	overflow: hidden;
+	
+}
+.t_single {
+	width: 33.33%;
+	float: left;
+	
+}
+
+.t_single img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+
+}
+.t_single h3 {
+
+}
+.t_single .role  {
+	padding-bottom: 5px;
+}
+.social_media {
+
+}
+.social_media ul {
+	
+}
+.social_media ul li {
+	list-style: none;
+	display: inline-block;
+}
+.social_media ul li a {
+	color: #fff;
+	padding: 0 3px;
+}
+.social_media ul li a:link i::before {
+	display: inline-block;
+	border: 2px solid #fff;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	padding: 5px;
+	transition: .8s;
+}
+.social_media ul li a:hover i::before {
+	background: #fff;
+	color: #000;
+	transform: rotate(360deg);
+}
+.team_info {
+	margin: 0 auto;
+	width: 70%;
+
+}
+.team_info p {
+	font-size: 20px;
+	text-align: center;
+	padding: 0;
+}
+.contact_bg {
+	background: #7690C5;
+}
+.footer_bg {
+	background: #7690C5;
+}
+.footer {
+	border-top: 1px solid #87a0d2;
+	padding: 30px 0;
+}
+.footer p {
+	color: #fff;
+	text-align: center;
+}
